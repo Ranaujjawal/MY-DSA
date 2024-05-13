@@ -60,8 +60,45 @@ void symmetry(int n) {
     }
 }
 
-
-
+// * * * * * * 
+// * *     * * 
+// *         * 
+// *         * 
+// * *     * * 
+// * * * * * * 
+void symmetry(int n) {
+    // Write your code here.
+    int itspaces=0;
+    for(int i=1;i<=n;i++){
+        int stars=n-i+1;
+        for(int j=1;j<=stars;j++){
+            cout<<"* ";
+        }
+        for(int j=0;j<itspaces;j++){
+            cout<<" ";
+        }
+        for(int j=1;j<=stars;j++){
+            cout<<"* ";
+        }
+        cout<<"\n";
+    itspaces+=2;
+    }
+    itspaces=2*n-2;
+     for(int i=1;i<=n;i++){
+        int stars=i;
+        for(int j=1;j<=stars;j++){
+            cout<<"* ";
+        }
+        for(int j=0;j<itspaces;j++){
+            cout<<" ";
+        }
+        for(int j=1;j<=stars;j++){
+            cout<<"* ";
+        }
+        cout<<"\n";
+    itspaces-=2;
+    }
+}
 
 
 
